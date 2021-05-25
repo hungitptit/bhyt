@@ -8,6 +8,7 @@ package entity;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -28,6 +29,69 @@ public class Person {
     public int getMuabaohiem() {
         return muabaohiem;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Person other = (Person) obj;
+        if (this.person_id != other.person_id) {
+            return false;
+        }
+        if (this.account_id != other.account_id) {
+            return false;
+        }
+        if (this.muabaohiem != other.muabaohiem) {
+            return false;
+        }
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.phoneNumber, other.phoneNumber)) {
+            return false;
+        }
+        if (!Objects.equals(this.email, other.email)) {
+            return false;
+        }
+        if (!Objects.equals(this.cmt, other.cmt)) {
+            return false;
+        }
+        if (!Objects.equals(this.sothebaohiem, other.sothebaohiem)) {
+            return false;
+        }
+        if (!Objects.equals(this.address, other.address)) {
+            return false;
+        }
+        if (!Objects.equals(this.dob, other.dob)) {
+            return false;
+        }
+        if (!Objects.equals(this.bhyt, other.bhyt)) {
+            return false;
+        }
+        if (!Objects.equals(this.listDisease, other.listDisease)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "person_id=" + person_id + ", name=" + name + ", account_id=" + account_id + ", phoneNumber=" + phoneNumber + ", dob=" + dob + ", email=" + email + ", cmt=" + cmt + ", sothebaohiem=" + sothebaohiem + ", address=" + address + ", muabaohiem=" + muabaohiem + ", bhyt=" + bhyt + ", listDisease=" + listDisease + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
 
     public Bhyt getBhyt() {
         return bhyt;

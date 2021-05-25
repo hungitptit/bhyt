@@ -37,16 +37,16 @@ btn{
   
      <div style="text-align: center">
      <br>
-       	<a type="button" class="btn btn-success"
+       	<a type="button" class="btn btn-success" style="width: 300px"
         href="person.jsp">Tìm kiếm theo họ tên</a></td>
         <br>
         <br>
-        <a type="button" class="btn btn-success"
+        <a type="button" class="btn btn-success"  style="width: 300px"
         href="hospital.jsp">Tìm kiếm theo bệnh viện</a></td>
      	<br>
      	<br>
-        <a type="button" class="btn btn-success"
-        href="disease">Tìm kiếm theo bệnh</a></td>
+        <a type="button" class="btn btn-success" style="width: 300px"
+        href="disease.jsp">Tìm kiếm theo bệnh</a></td>
      
      </div>
      	

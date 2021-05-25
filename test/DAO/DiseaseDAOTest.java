@@ -6,6 +6,7 @@
 package DAO;
 
 import entity.Disease;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.After;
@@ -66,12 +67,50 @@ public class DiseaseDAOTest {
     public void testSearchByName() {
         System.out.println("searchByName");
         String name = "Vay";
+     
         DiseaseDAO instance = new DiseaseDAO();
         List<Disease> expResult = Arrays.asList(new Disease(5, 4, 1, "Vẩy nến","Da liễu" ));
+       
         List<Disease> result = instance.searchByName(name);
+       
         assertTrue(expResult.equals(result));
+        
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
     }
-    
+        @Test
+    public void testSearchByName2() {
+        System.out.println("searchByName");
+        
+        String name = "";
+        DiseaseDAO instance = new DiseaseDAO();
+        
+        List<Disease> expResult = Arrays.asList(new Disease(5, 4, 1, "Vẩy nến","Da liễu"),
+                new Disease(6, 5, 1, "Nhồi máu cơ tim","Tim mạch"),
+                new Disease(7, 6, 6, "Gãy tay","Chấn thương chỉnh hình"),
+                new Disease(8, 7, 3, "Động kinh","Thần Kinh")
+                );
+        List<Disease> result = instance.searchByName(name);
+      
+        assertTrue(expResult.equals(result));
+       
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
+    }
+    @Test
+     public void testSearchByName3() {
+        System.out.println("searchByName");
+        
+        String name = "ádkl";
+        DiseaseDAO instance = new DiseaseDAO();
+        
+        List<Disease> expResult = new ArrayList<>();
+               
+        List<Disease> result = instance.searchByName(name);
+      
+        assertTrue(expResult.equals(result));
+       
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
+    }
 }

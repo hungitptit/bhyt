@@ -43,7 +43,7 @@ public class PersonDAO extends connect.DBConnect{
                 String email = rs.getString(5);
                 String cmt = rs.getString(6);
                 String sothebaohiem = rs.getString(7);
-                String address = rs.getString(8);
+                String address = rs.getString(9);
                 int account_id = rs.getInt(10);
                 
                 Person person = new Person(person_id, name, account_id, phoneNumber, dob, email, cmt, sothebaohiem,address);
@@ -75,7 +75,7 @@ public class PersonDAO extends connect.DBConnect{
                 String email = rs.getString(5);
                 String cmt = rs.getString(6);
                 String sothebaohiem = rs.getString(7);
-                String address = rs.getString(8);
+                String address = rs.getString(9);
                 int account_id = rs.getInt(10);
                 
                 Person person = new Person(person_id, personName , account_id, phoneNumber, dob, email, cmt, sothebaohiem,address);

@@ -55,7 +55,7 @@ public class PersonDAOIT {
                 new Person(6, "Ngô Đức Hùng", 3, "0921376321", Date.valueOf("1999-03-02"), "ngohung219@gmail.com", "09012397312321", "8970094223412", "Hà Nội"),
                 new Person(7, "Nguyễn Quốc Hùng", 4, "0923682341", Date.valueOf("1998-09-08"), "hgna@gmail.com", "03837348462143214", null, "Hà Nội"));
         List<Person> result = instance.getListPerson();
-        assertEquals(expResult, result);
+        assertTrue(expResult.equals(result));
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -68,9 +68,15 @@ public class PersonDAOIT {
         System.out.println("searchByName");
         String name = "hung";
         PersonDAO instance = new PersonDAO();
-        List<Person> expResult = Arrays.asList(new Person(4, "Trần Xuân Hưng", 1, "0911060297", Date.valueOf("1998-12-27"), "xuanhungtran2712@gmail.con", "03837348462143214", "11926492834", "Hà Nội"));
-        List<Person> result = instance.searchByName(name);
-        assertEquals(expResult, result);
+        List<Person> expResult1 = Arrays.asList(
+                new Person(4, "Trần Xuân Hưng", 1, "0911060297",Date.valueOf("1998-12-27"), "xuanhungtran2712@gmail.con", "03837348462143214", "11926492834", "Hà Nội"),
+                new Person(6, "Ngô Đức Hùng", 3, "0921376321", Date.valueOf("1999-03-02"), "ngohung219@gmail.com", "09012397312321", "8970094223412", "Hà Nội"),
+                 new Person(7, "Nguyễn Quốc Hùng", 4, "0923682341", Date.valueOf("1998-09-08"), "hgna@gmail.com", "03837348462143214", null, "Hà Nội")
+                 );
+        List<Person> result1 = instance.searchByName(name);
+        System.out.println(result1.get(0).toString());
+        System.out.println(expResult1.get(0).toString());
+        assertTrue(expResult1.equals(result1));
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
