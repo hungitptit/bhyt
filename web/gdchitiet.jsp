@@ -1,19 +1,36 @@
+<%@page import="entity.Bill"%>
+<%@page import="entity.Person"%>
 <%@page import="DAO.PersonDAO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.ArrayList,DAO.*,entity.*"%>
+<%@page import="java.util.ArrayList"%>
+<%@ include file="header.jsp"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css"> 
-table, th, td {  
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-</style>
-<meta charset="ISO-8859-1">
-
-<title>Thông tin chi tiết</title>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+btn{
+   width: 60px;
+  }
+  .th_btn{
+  width:60px;
+  }
+  #th_password{
+  width:60%;
+  }
+  body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+	
+</style>
 <%
 	String index = request.getParameter("index");
 	Person pers = new Person();
@@ -29,6 +46,7 @@ table, th, td {
 //	String tk = request.getAttribute("tennguoi");
 %>
 <body>
+    <div class="panel-body">
 	<h1>Thông tin bệnh nhân</h1>
 	Ten: <%=pers.getName() %><br>
 	Ma BH: <%=pers.getBhyt().getId() %><br>
@@ -38,7 +56,8 @@ table, th, td {
 	Lich su su dung: <br>
 	
 	<%if(bill!= null){%>
-	<table>
+         
+	<table class="table table-bordered">
 		<tr>
 			<th>Tên bệnh</th>
 			<th>Bệnh viện</th>
@@ -60,14 +79,24 @@ table, th, td {
 		</tr>
 		<%} }%>
 	</table>
-  	<a type="button" class="btn btn-primary"
+         <div class="panel-body">
+  	<a type="button" class="btn-success btn-md"
         href="gdtimnguoi.jsp">Quay lại</a></td>
-	<a type="button" class="btn btn-primary"
+	<a type="button" class="btn-success btn-md"
         href="gdxuatbc.jsp">Xuất báo cáo</a></td>
+        <div>
+ 
 <script >
 function openPage(page){
 	window.location="http://localhost:8080/Insurance/baocao/"+page;
 }
 </script>
 </body>
+<div class="footer">
+    
+    <h2>
+        
+       
+    </h2>
+</div>
 </html>

@@ -46,7 +46,7 @@ btn{
      	<br>
      	<br>
         <a type="button" class="btn btn-success" style="width: 300px"
-        href="gdxemtk">Cấu hình</a></td>
+        href="gdcauhinh.jsp">Cấu hình</a></td>
      
      </div>
      	

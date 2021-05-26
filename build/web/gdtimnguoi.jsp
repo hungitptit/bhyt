@@ -1,17 +1,35 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.ArrayList,DAO.*,entity.*"%>
+<%@page import="entity.Person"%>
+<%@page import="DAO.PersonDAO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ include file="header.jsp"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css"> 
-table, th, td {  
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-</style>
-<meta charset="ISO-8859-1">
-<title>Tìm kiếm</title>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+btn{
+   width: 60px;
+  }
+  .th_btn{
+  width:60px;
+  }
+  #th_password{
+  width:60%;
+  }
+  body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+	
+</style>
 <%
 	String tenN = request.getParameter("timkiem");
 	ArrayList<Person> listP = null;
@@ -26,19 +44,20 @@ table, th, td {
 		<table>
 			<tr>
 				<td>Tên</td>
-				<td><input type="text" name = "timkiem" <%if(tenN!= null){ %>
+				<td><input  type="text" name = "timkiem" <%if(tenN!= null){ %>
 														value = "<%=tenN%>"<%} %>></td>
-				<td><input type = "submit" value = "tim">
+				<td><input class= "btn-success btn-md" type = "submit" value = "Tìm kiếm">
 				</td>	
 			</tr>										
 		</table>
 	</form>
 	
-	
+
 	<%
 		if(listP!= null){
 	%>			
-	<table name = "kqPerson" >
+         <div class="panel-body">
+	<table class="table table-bordered" name = "kqPerson" >
 		<tr><th>TT</th>
 		<th>Mã </th>
 		<th>Tên </th>
@@ -68,5 +87,14 @@ table, th, td {
 		</tr>
 		<%} }%>			
 	</table>
+         </div>
 </body>
+<div class="footer">
+    
+    <h2>
+        
+       
+    </h2>
+</div>
+
 </html>

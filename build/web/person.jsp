@@ -34,7 +34,7 @@ btn{
  <div>
   <form action="doSearchPerson.jsp" method="get">
   <input type="text" name="name" id="name"  /></td>
-  <input class= "btn-success btn-md" type="submit" value="Tìm kiếm" />
+  <input id ="btn-search " class= "btn-success btn-md" type="submit" value="Tìm kiếm" />
   </form>
  </div>
  <br>

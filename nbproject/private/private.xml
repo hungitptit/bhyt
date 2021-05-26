@@ -2,6 +2,41 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/study/SQA/hospital/web/gdxuatbc.jsp</file>
+            <file>file:/D:/study/SQA/hospital/web/error.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/HospitalDAOTest.java</file>
+            <file>file:/D:/study/SQA/hospital/src/java/DAO/PersonDAO.java</file>
+            <file>file:/D:/study/SQA/hospital/web/Login.jsp</file>
+            <file>file:/D:/study/SQA/hospital/src/java/control/CauHinhControl.java</file>
+            <file>file:/D:/study/SQA/hospital/web/theodoids.jsp</file>
+            <file>file:/D:/study/SQA/hospital/src/java/control/LoginControl.java</file>
+            <file>file:/D:/study/SQA/hospital/web/header.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/control/LoginControlIT.java</file>
+            <file>file:/D:/study/SQA/hospital/src/java/entity/Person.java</file>
+            <file>file:/D:/study/SQA/hospital/web/gdtimnguoi.jsp</file>
+            <file>file:/D:/study/SQA/hospital/src/java/entity/Service.java</file>
+            <file>file:/D:/study/SQA/hospital/src/java/entity/ServiceType.java</file>
+            <file>file:/D:/study/SQA/hospital/src/java/DAO/HospitalDAO.java</file>
+            <file>file:/D:/study/SQA/hospital/web/home.jsp</file>
+            <file>file:/D:/study/SQA/hospital/web/doSearchHospital.jsp</file>
+            <file>file:/D:/study/SQA/hospital/src/java/DAO/DiseaseDAO.java</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/DiseaseDAOTest.java</file>
+            <file>file:/D:/study/SQA/hospital/web/doDeleteCauHinh.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/LoginDAOIT.java</file>
+            <file>file:/D:/study/SQA/hospital/web/hospital.jsp</file>
+            <file>file:/D:/study/SQA/hospital/web/gdcauhinh.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/PersonDAOTest.java</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/LoginDAOTest.java</file>
+            <file>file:/D:/study/SQA/hospital/web/gdchitiet.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/AccountDAOTest.java</file>
+            <file>file:/D:/study/SQA/hospital/web/chiTietCauHinh.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/control/LoginControlTest.java</file>
+            <file>file:/D:/study/SQA/hospital/web/disease.jsp</file>
+            <file>file:/D:/study/SQA/hospital/web/doSearchPerson.jsp</file>
+            <file>file:/D:/study/SQA/hospital/web/doSearchDisease.jsp</file>
+            <file>file:/D:/study/SQA/hospital/test/DAO/PersonDAOIT.java</file>
+            <file>file:/D:/study/SQA/hospital/src/java/DAO/ServiceDAO.java</file>
+        </group>
     </open-files>
 </project-private>

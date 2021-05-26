@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Login
-    Created on : Dec 5, 2020, 9:06:34 PM
-    Author     : Admin
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,9 +8,9 @@
     <body>
         <h1>login</h1>
         <form action="LoginControl" method="post">
-            Username: <input type="text" name="username" /> <BR>
-            Password: <input type="password" name="password" /> <BR>
-            <input type="submit" value="Login"/>
+            Username: <input id="tvUserName" type="text" name="username" /> <BR>
+            Password: <input id="txPassword" type="password" name="password" /> <BR>
+            <input id="buttonLogin" type="submit" value="Login"/>
         </form>
     </body>
 </html>
